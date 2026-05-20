@@ -43,5 +43,28 @@ An AI-powered emergency incident tracking system. Users submit incident reports 
     - docker build -t disaster-response .
     - docker run -p 8000:8000 --env-file .env disaster-response
 
+## API Endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/` | Serves the frontend |
+| GET | `/health` | Health check |
+| POST | `/incidents` | Submit a new incident report |
+| GET | `/incidents` | List all incidents |
+| GET | `/incidents/{id}` | Get a single incident |
+| PATCH | `/incidents/{id}/status` | Update incident status (ACTIVE, IN_PROGRESS, RESOLVED) |
+| GET | `/incidents/stats/summary` | Breakdown by severity, category, and status |
+
+## Example Request
+
+```json
+POST /incidents
+{
+  "location": "Main St and 5th Ave",
+  "description": "Large fire visible from the street, spreading to nearby buildings",
+  "reporter_name": "Jane Doe"
+}
+```
+
 
   
