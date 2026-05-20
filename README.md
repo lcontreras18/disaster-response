@@ -7,7 +7,7 @@ by severity (LOW, MEDIUM, HIGH, CRITICAL) and category (FLOOD, FIRE, MEDICAL, ST
 Reports are stored and exposed through a REST API with a simple HTML front
 
 ## Key Features
-# - AI incident classification: each submitted report is automatically analyzed by Claude and assigned 
+ - AI incident classification: each submitted report is automatically analyzed by Claude and assigned 
   a severity level (LOW, MEDIUM, HIGH, CRITICAL), a category (FLOOD, FIRE, MEDICAL, STRUCTURAL, OTHER), and a one-sentence summary.
   -Incident lifecycle tracking: incidents can be moved through three statuses (ACTIVE, IN_PROGRESS, RESOLVED) via the API
   -Stats endpoint: a summary endpoint breaks down all incidents by severity, category, and current status in a single request.
