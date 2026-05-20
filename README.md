@@ -25,7 +25,7 @@ An AI-powered emergency incident tracking system. Users submit incident reports 
 - Python 3.10+
 - An Anthropic API key
 
-###Setup
+### Setup
   - Clone the repository:
     - git clone https://github.com/lcontreras18/disaster-response.git
     - cd disaster-response
@@ -39,7 +39,7 @@ An AI-powered emergency incident tracking system. Users submit incident reports 
     - uvicorn main:app --reload
     - The app will be available at http://localhost:8000.
 
-  -Running with Docker:
+  -  Running with Docker:
     - docker build -t disaster-response .
     - docker run -p 8000:8000 --env-file .env disaster-response
 
