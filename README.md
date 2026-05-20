@@ -1,29 +1,29 @@
 # AI Powered Disaster Response
 
 ## Description
-An AI-powered emergency incident tracking system. Users submit incident reports with a 
-location and description, and the system uses Claude to automatically classify each report 
-by severity (LOW, MEDIUM, HIGH, CRITICAL) and category (FLOOD, FIRE, MEDICAL, STRUCTURAL, OTHER). 
-Reports are stored and exposed through a REST API with a simple HTML front
+
+An AI-powered emergency incident tracking system. Users submit incident reports with a location and description, and the system uses Claude to automatically classify each report by severity (LOW, MEDIUM, HIGH, CRITICAL) and category (FLOOD, FIRE, MEDICAL, STRUCTURAL, OTHER). Reports are stored and exposed through a REST API with a simple HTML frontend.
 
 ## Key Features
- - AI incident classification: each submitted report is automatically analyzed by Claude and assigned 
-  a severity level (LOW, MEDIUM, HIGH, CRITICAL), a category (FLOOD, FIRE, MEDICAL, STRUCTURAL, OTHER), and a one-sentence summary.
-  -Incident lifecycle tracking: incidents can be moved through three statuses (ACTIVE, IN_PROGRESS, RESOLVED) via the API
-  -Stats endpoint: a summary endpoint breaks down all incidents by severity, category, and current status in a single request.
-  -Graceful fallback: if the AI classifier fails for any reason, the system defaults to MEDIUM severity and OTHER category rather 
-   than dropping the report.
+
+- AI incident classification: each submitted report is automatically analyzed by Claude and assigned a severity level (LOW, MEDIUM, HIGH, CRITICAL), a category (FLOOD, FIRE, MEDICAL, STRUCTURAL, OTHER), and a one-sentence summary.
+- Incident lifecycle tracking: incidents can be moved through three statuses (ACTIVE, IN_PROGRESS, RESOLVED) via the API.
+- Stats endpoint: a summary endpoint breaks down all incidents by severity, category, and current status in a single request.
+- Graceful fallback: if the AI classifier fails for any reason, the system defaults to MEDIUM severity and OTHER category rather than dropping the report.
 
 ## Tech Stack
-# -Python, FastAPI, Pydantic
-  -Anthropic Claude (claude-opus-4-5) for incident classification
-  -HTML/CSS frontend served as static files
-  -Docker for containerization
 
-### Getting Started 
+- Python, FastAPI, Pydantic
+- Anthropic Claude (claude-opus-4-5) for incident classification
+- HTML/CSS frontend served as static files
+- Docker for containerization
+
+## Getting Started
+
 ### Prerequisites
-  -Python 3.10+
-  -An Anthropic API key
+
+- Python 3.10+
+- An Anthropic API key
 
 ###Setup
   - Clone the repository:
